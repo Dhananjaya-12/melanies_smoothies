@@ -5,8 +5,9 @@ import requests
 import pandas as pd
 
 # Connect to Snowflake using Streamlit Secrets
-cnx = st.connection("snowflake")
+cnx = st.connection("snowflake", type="snowflake")
 session = cnx.session()
+
 
 # App title
 st.title("🥤 Customize Your Smoothie! 🥤")
